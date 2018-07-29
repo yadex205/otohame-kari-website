@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/yadex205/otohame-kari-website/issues"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "glob": "^7.1.2",
+    "jake": "^8.0.16",
+    "replace-ext": "^1.0.0",
+    "write": "^1.0.3"
+  }
 }
