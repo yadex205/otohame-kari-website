@@ -32,5 +32,8 @@
     "stylus": "^0.54.5",
     "webpack": "^4.16.3",
     "write": "^1.0.3"
+  },
+  "dependencies": {
+    "reset-css": "^4.0.1"
   }
 }
