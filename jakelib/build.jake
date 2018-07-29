@@ -1,8 +1,9 @@
-/* global jake, task, desc */
+/* global task, desc */
 
 require('./build/html.jake');
 require('./build/css.jake');
 require('./build/js.jake');
+require('./build/copy.jake');
 
 desc('Build website');
-task('build', ['build:html', 'build:css', 'build:js']);
+task('build', ['build:html', 'build:css', 'build:js', 'build:copy']);
