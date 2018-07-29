@@ -6,7 +6,8 @@
   "parserOptions": { "sourceType":  "module",
                      "ecmaVersion": 2017 },
 
-  "rules": { "indent":          ["error", 2, { "ObjectExpression": "first" }],
+  "rules": { "indent":          ["error", 2, { "ObjectExpression": "first",
+                                               "ArrayExpression": "first" }],
              "linebreak-style": ["error", "unix"],
              "quotes":          ["error", "single"],
              "semi":            ["error", "always"] } }
