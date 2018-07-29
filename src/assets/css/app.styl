@@ -1,0 +1,12 @@
+@import '../../../node_modules/reset-css/reset.css'
+
+for $level in 'atoms' 'organisms' 'templates' 'pages'
+  @import '../../components/' + $level + '/**/*.styl'
+
+html
+  height 100%
+
+body
+  height 100%
+  background-color #0099cc
+  font-family sans-serif // TODO: Define correctly.
