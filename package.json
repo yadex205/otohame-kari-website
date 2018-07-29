@@ -1,0 +1,19 @@
+{
+  "name": "otohame-website",
+  "version": "1.0.0",
+  "description": "The sources for http://oy-brigade.work/otohame-kari",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yadex205/otohame-kari-website.git"
+  },
+  "author": "Kanon Kakuno <yadex205@outlook.jp>",
+  "license": "CC-BY-NC-4.0",
+  "bugs": {
+    "url": "https://github.com/yadex205/otohame-kari-website/issues"
+  },
+  "private": true
+}
