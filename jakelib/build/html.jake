@@ -1,11 +1,11 @@
-/* global jake, task, desc */
+/* global jake, task, desc, namespace */
 
 const path      = require('path');
-const promisify = require('util').promisify
+const promisify = require('util').promisify;
 
 const ejs        = require('ejs');
 const glob       = promisify(require('glob'));
-const replaceExt = require('replace-ext')
+const replaceExt = require('replace-ext');
 const writeFile  = require('write');
 
 namespace('build', () => {
