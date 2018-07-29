@@ -1,10 +1,12 @@
 { "env": { "es6":  true,
-           "node": true },
+           "node": true,
+           "browser": true },
 
-  "extends": "eslint:recommended",
+  "extends": ["eslint:recommended", "plugin:react/recommended"],
 
   "parserOptions": { "sourceType":  "module",
-                     "ecmaVersion": 2017 },
+                     "ecmaVersion": 2017,
+                     "ecmaFeatures": { "jsx": true } },
 
   "rules": { "indent":          ["error", 2, { "ObjectExpression": "first",
                                                "ArrayExpression": "first" }],
