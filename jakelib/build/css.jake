@@ -19,7 +19,7 @@ namespace('build', () => {
 
       try {
         const src = await promisify(fs.readFile)(srcPath);
-        const buffer = await promisify(stylus.render)(src.toString(), { filename: dest });
+        const buffer = await promisify(stylus.render)(src.toString(), { filename: srcPath });
 
         await writeFile(dest, buffer);
         jake.logger.log(`[build:css] ${srcPath} ==> ${dest}`);
