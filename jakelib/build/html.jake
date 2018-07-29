@@ -17,7 +17,7 @@ namespace('build', () => {
       const dest = path.join('./htdocs/', path.relative('./src', replaceExt(src, '.html')));
 
       try {
-        const buffer = await ejs.renderFile(src, {}, {});
+        const buffer = await ejs.renderFile(src, {}, { root: path.join(__dirname, '../../') });
 
         await writeFile(dest, buffer);
         jake.log.log(`[build:html] ${src} ==> ${dest}`);

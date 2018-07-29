@@ -19,7 +19,9 @@ namespace('build', () => {
 
       try {
         const src = await promisify(fs.readFile)(srcPath);
-        const buffer = await promisify(stylus.render)(src.toString(), { filename: srcPath });
+        const stylusOpt = { filename: srcPath,
+                            'include css': true };
+        const buffer = await promisify(stylus.render)(src.toString(), stylusOpt);
 
         await writeFile(dest, buffer);
         jake.logger.log(`[build:css] ${srcPath} ==> ${dest}`);
