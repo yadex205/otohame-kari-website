@@ -19,6 +19,8 @@ namespace('build', () => {
         await webpack({ entry: src,
                         output: { path: path.join(__dirname, '../../', path.dirname(dest)),
                                   filename: path.basename(dest) },
+                        resolve: { extensions: ['.js', '.jsx'],
+                                   modules: ['node_modules'] },
                         module: { rules: [{ test: /\.jsx$/,
                                             exclude: /node_modules/,
                                             use: { loader: 'babel-loader',
